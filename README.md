@@ -1,8 +1,8 @@
-测试
+# 测试
 
 # 技术栈
 
-vue2.0 + vue-router + vuex + axios + mock.js(模拟数据) + ES6 + less
+vue2.0 + vue-router + vuex + axios + ES6 + less
 
 ## Build Setup
 
