@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Gologin from '@/components/car/gologin.vue'
+import Gologin from '@/components/blog/gologin.vue'
 export default {
   components: {
     'v-gologin': Gologin

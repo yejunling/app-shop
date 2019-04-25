@@ -8,11 +8,11 @@
     </mt-tab-item>
     <mt-tab-item id="分类页">
       <i slot="icon" class="icon-category"></i>
-      分类
+      商城
     </mt-tab-item>
-    <mt-tab-item id="购物车页">
+    <mt-tab-item id="社区页">
       <i slot="icon" class="icon-car"></i>
-      购物车
+      社区
     </mt-tab-item>
     <mt-tab-item id="用户页">
       <i slot="icon" class="icon-user"></i>
@@ -49,8 +49,8 @@
           this.selected = '分类页';
 
           break;
-        case '购物车页':
-          this.selected = '购物车页';
+        case '社区页':
+          this.selected = '社区页';
 
           break;
         case '用户页':

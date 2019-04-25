@@ -24,13 +24,8 @@
               </router-link>
               <router-link :to="{ name: ''}">
                   <span class="icon2-thecar"></span>
-                  <p>待收货</p>
+                  <p>待维修</p>
               </router-link>
-              <router-link :to="{ name: ''}">
-                  <span class="icon2-fixed"></span>
-                  <p>退换修</p>
-              </router-link>
-
           </section>
 
           <section class="my-vip">
@@ -41,7 +36,7 @@
                 </span>
               </div>
               <p>
-                <span>会员福利</span><i class="icon-go"></i>
+                <span>设置</span><i class="icon-go"></i>
               </p>
             </router-link>
             <router-link class="my-vip-bottom ho" :to="{ name: ''}">
@@ -49,41 +44,18 @@
                 <span class="icon2-money"></span>
               </div>
               <p>
-                <span>我的优惠</span><i class="icon-go"></i>
+                <span>关于我们</span><i class="icon-go"></i>
               </p>
             </router-link>
-          </section>
-
-          <section class="my-service">
-              <router-link class="my-service-top" :to="{ name: ''}">
-                  <div>
-                    <span class="icon2-service">
-                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-                    </span>
-                  </div>
-                  <p>
-                    <span>服务中心</span><i class="icon-go"></i>
-                  </p>
-              </router-link>
-              <router-link class="my-service-bottom" :to="{ name: ''}">
-                  <div>
-                    <span class="icon2-milogo"></span>
-                  </div>
-                  <p>
-                    <span>电商之家</span><i class="icon-go"></i>
-                  </p>
-              </router-link>
           </section>
 
           <section class="my-settle">
               <router-link :to="{ name: ''}" class="my-settle-top">
                   <div>
                     <span class="icon2-f"></span>
-
                   </div>
-
                   <p>
-                    <span>F码通道</span><i class="icon-go"></i>
+                    <span>关于我们</span><i class="icon-go"></i>
                   </p>
               </router-link>
               <router-link :to="{ name: ''}" class="my-settle-bottom">

@@ -7,10 +7,10 @@
 
     <div class="pay-address">
       <div>
-        <p class="main-address-per">收货人:<span>王先生</span></p>
-        <p class="main-address-tel">15985698749</p>
+        <p class="main-address-per">收货人:<span>joker</span></p>
+        <p class="main-address-tel">131110000</p>
       </div>
-      <p>收货地址:<span>河南省郑州市中原区秦岭路8号院59号单元28层15号东户第三家</span></p>
+      <p>收货地址:<span>四川省成都市温江区</span></p>
     </div>
 
     <div class="pay-product">

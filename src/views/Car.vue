@@ -14,9 +14,9 @@
 
 <script>
 import Header from '@/common/_header.vue'
-import Nothing from '@/components/car/nothing.vue'
-import Something from '@/components/car/something.vue'
-import Footer from '@/components/car/footer.vue'
+import Nothing from '@/components/blog/nothing.vue'
+import Something from '@/components/blog/something.vue'
+import Footer from '@/components/blog/footer.vue'
 
 export default {
   components:{

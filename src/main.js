@@ -5,12 +5,16 @@ import router from './router'
 import store from '@/vuex/store.js'   //vuex
 import api from '@/http/api.js'       //http请求
 import less from 'less'
-import Mint from 'mint-ui';    //移动端UI
+import Mint from 'mint-ui'; //移动端UI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import 'mint-ui/lib/style.css'
 Vue.use(Mint);
 Vue.config.productionTip = false
 Vue.prototype.$api = api;
+Vue.use(ElementUI);
 
+let mockUrl ='http://apitest.work.tianheng-uestc.com/mock/5cbb2505faae9007a335ddd1';
 
 // 用钩子函数beforeEach()对路由进行判断
 

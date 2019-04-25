@@ -20,7 +20,7 @@
        :readonly='!toggle'
        :disableClear = '!toggle'
         ></mt-field>
-      <p class="tip">Tip : 账号密码随便输</p>
+      <p class="tip" @click="goRegister()">还没有账号？点击这里注册</p>
     </section>
     <mt-button
      plain
@@ -39,6 +39,8 @@
 <script>
 import Header from '@/common/_header.vue'
 import { Toast } from 'mint-ui'
+import axios from 'axios';
+import {mockUrl} from '@/http/mock';
 export default {
   components:{
     'v-header':Header
@@ -54,10 +56,19 @@ export default {
     // 登录按钮
     login(){
       if(this.account!=="" && this.password!=="") {
-        Toast('登录成功,存储token,跳转网页');
-        this.toggle = false;
-        this.$store.commit('CHANGE_TOKEN',1);
-        this.$store.commit('SET_USER', this.account);
+        // 登陆
+        let data = {
+          username: this.account,
+          password: this.password,          
+        };
+        axios.post(mockUrl+'/login', data).then((res) => {
+          if (res.status == 200) {
+            Toast('登录成功,存储token,跳转网页');
+            this.toggle = false;
+            this.$store.commit('CHANGE_TOKEN',1);
+            this.$store.commit('SET_USER', this.account);
+          }
+        });
       }else {
         Toast('账号密码不能为空');
       }
@@ -78,7 +89,10 @@ export default {
       this.account = '';
       this.password = '';
 
-    }
+    },
+    goRegister() {
+      this.$router.push('/register');
+    },
   }
 }
 

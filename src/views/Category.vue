@@ -5,10 +5,11 @@
     </v-header>
     <section class="view">
       <v-aside :datas="allData.aside"/>
-      <router-view 
-        :datas="allData.aside" 
+      <router-view
+        :datas="allData.aside"
       />
     </section>
+
   </div>
 </template>
 
@@ -36,10 +37,6 @@ export default {
           {id:6, title:'测试笔记本', imgPath: './static/img/computer2.png'},
           {id:7, title:'测试笔记本', imgPath: './static/img/computer3.png'},
           {id:8, title:'测试笔记本', imgPath: './static/img/computer4.png'},
-          {id:9, title:'测试', imgPath: './static/img/computer3.png'},
-          {id:10, title:'测试', imgPath: './static/img/computer1.png'},
-          {id:11, title:'测试', imgPath: './static/img/computer4.png'},
-          {id:12, title:'测试', imgPath: './static/img/computer2.png'},
         ]
       },{
         title:'整机',
@@ -52,10 +49,6 @@ export default {
           {id:6, title:'整机', imgPath: './static/img/computer3.png'},
           {id:7, title:'整机', imgPath: './static/img/computer2.png'},
           {id:8, title:'整机', imgPath: './static/img/computer1.png'},
-          {id:9, title:'测试', imgPath: './static/img/computer3.png'},
-          {id:10, title:'测试', imgPath: './static/img/computer1.png'},
-          {id:11, title:'主板', imgPath: './static/img/computer4.png'},
-          {id:12, title:'主板', imgPath: './static/img/computer2.png'},
         ]
       },{
         title:'处理器',
@@ -68,10 +61,6 @@ export default {
           {id:6, title:'处理器', imgPath: './static/img/computer1.png'},
           {id:7, title:'处理器', imgPath: './static/img/computer4.png'},
           {id:8, title:'处理器', imgPath: './static/img/computer3.png'},
-          {id:9, title:'测试', imgPath: './static/img/computer3.png'},
-          {id:10, title:'测试', imgPath: './static/img/computer1.png'},
-          {id:11, title:'测试', imgPath: './static/img/computer4.png'},
-          {id:12, title:'测试', imgPath: './static/img/computer2.png'},
         ]
       },{
         title:'主板',
@@ -84,10 +73,6 @@ export default {
           {id:6, title:'主板', imgPath: './static/img/computer1.png'},
           {id:7, title:'主板', imgPath: './static/img/computer4.png'},
           {id:8, title:'主板', imgPath: './static/img/computer2.png'},
-          {id:9, title:'主板', imgPath: './static/img/computer3.png'},
-          {id:10, title:'主板', imgPath: './static/img/computer1.png'},
-          {id:11, title:'主板', imgPath: './static/img/computer4.png'},
-          {id:12, title:'主板', imgPath: './static/img/computer2.png'},
         ]
       }]
       }

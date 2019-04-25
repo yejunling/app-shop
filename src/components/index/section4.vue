@@ -5,13 +5,12 @@
       <!-- <i class="icon-right"></i> -->
     </h1>
     <ul class="section4-list">
-      <li v-for="k in list" :key='k.id'>
-        <router-link :to="{name:'详情页'}">
+      <li v-for="k in list" :key='k.id' @click="goPackge(k)">
+        <a>
           <img v-lazy="k.imgPath">
           <p>{{k.intro}}</p>
-        </router-link>
+        </a>
         <h3>{{k.title}}</h3>
-        <span>$ {{k.price}}</span>
       </li>
 
     </ul>
@@ -35,7 +34,14 @@ export default {
         return []
       }
     }
-  }
+  },
+  methods: {
+    goPackge(k) {
+      if (k.id == 2) {
+        this.$router.push('/package');
+      }
+    },
+  },
 }
 </script>
 
@@ -49,7 +55,7 @@ export default {
   .section4-title {
     .bt();
     text-align: center;
-    .fz(font-size, 40);
+    .fz(font-size, 50);
     padding: 4vw 0;
     position: relative;
     background-color: #ffffff;

@@ -28,7 +28,7 @@
 
 <script>
 // 提示登录组件
-import Gologin from '@/components/car/gologin.vue'
+import Gologin from '@/components/blog/gologin.vue'
 import Util from '../../util/common'
 export default {
   components: {

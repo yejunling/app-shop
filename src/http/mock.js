@@ -94,5 +94,7 @@ var category = Mock.mock('', {
       }]
     }]
 });
- 
-export {index,detail,category}
+
+let mockUrl = 'http://apitest.work.tianheng-uestc.com/mock/5cbb2505faae9007a335ddd1'; 
+
+export {index,detail,category, mockUrl}
